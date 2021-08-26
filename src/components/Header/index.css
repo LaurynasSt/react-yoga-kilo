@@ -1,0 +1,35 @@
+.header-upper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  background-color: #90caf9;
+}
+
+.header-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.header-text {
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 18px;
+}
+
+.header-text-time {
+  font-weight: 600;
+}
+
+.header-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 72px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-bottom {
+    height: 56px;
+  }
+}
