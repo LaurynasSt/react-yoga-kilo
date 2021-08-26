@@ -12,6 +12,7 @@
 }
 
 .header-text {
+  color: #fff;
   font-size: 15px;
   font-weight: 400;
   margin-left: 18px;
@@ -27,6 +28,8 @@
   justify-content: center;
   height: 72px;
 }
+
+/* Mobile Media Queries */
 
 @media screen and (max-width: 768px) {
   .header-bottom {
