@@ -1,0 +1,13 @@
+.plan-description {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.price-monthly {
+  text-decoration: line-through;
+}
+
+.price-discount {
+  color: #ff9b4e;
+  font-weight: 700;
+}

@@ -1,0 +1,56 @@
+.plan-block {
+  position: relative;
+  border-radius: 16px;
+  max-width: 352px;
+  padding: 16px;
+  border: 2px solid rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.plan-block-active {
+  position: relative;
+  border-radius: 16px;
+  max-width: 352px;
+  padding: 16px;
+  border: 2px solid #ff9b4e;
+  margin-bottom: 8px;
+}
+
+.plan-title {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.plan-discount {
+  margin-left: 8px;
+  padding: 4px 8px;
+  background-color: #ffe082;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+.plan-price {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.price-month {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.plan-description {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+}
