@@ -1,3 +1,7 @@
 .plans-program-container {
   padding: 0 355px;
 }
+
+.plans-program-container > button {
+  margin: 8px 0 16px 0;
+}

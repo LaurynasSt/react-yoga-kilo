@@ -3,6 +3,7 @@ import "./index.css";
 import PlanBlock from '../PlanBlock'
 import SectionTitle from '../SectionTitle';
 import { useState } from "react";
+import Button from "../Button";
 
 function PlansContainer() {
     const [sixMonthsState, setSixMonthsState] = useState(true);
@@ -61,6 +62,7 @@ function PlansContainer() {
                 onlyMonth={true}
             >
             </PlanBlock>
+            <Button onClick={() => alert("Coming soon... 🚀🚀🚀 ")}>Get your plan</Button>
         </section>
     );
 }
