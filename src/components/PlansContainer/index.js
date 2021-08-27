@@ -64,13 +64,15 @@ function PlansContainer() {
             >
             </PlanBlock>
             <Button onClick={() => alert("Coming soon... 🚀🚀🚀 ")}>Get your plan</Button>
-            <p className="plan-terms">
-                Your free trial will automatically become a paid subscription on the 8th day after you begin your trial. To cancel your subscription, please contact us at least 24 hours before the end of the trial period.
-            </p>
-            <p className="plan-terms plan-terms-second-p">
-                By choosing a payment method you agree to the <a className="plan-terms-link" href="#">T&Cs</a> and <a className="plan-terms-link" href="#">Privacy Policy</a>
-            </p>
-            <img src={Checkout} alt="checkout" />
+            <div className="terms-wrapper">
+                <p className="plan-terms">
+                    Your free trial will automatically become a paid subscription on the 8th day after you begin your trial. To cancel your subscription, please contact us at least 24 hours before the end of the trial period.
+                </p>
+                <p className="plan-terms plan-terms-second-p">
+                    By choosing a payment method you agree to the <a className="plan-terms-link" href="#">T&Cs</a> and <a className="plan-terms-link" href="#">Privacy Policy</a>
+                </p>
+                <img src={Checkout} alt="checkout" />
+            </div>
         </section>
     );
 }

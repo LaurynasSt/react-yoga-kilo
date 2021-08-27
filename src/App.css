@@ -36,6 +36,28 @@ main {
   color: #ff9b4e;
 }
 
+.person-cards-wrapper {
+  padding: 0 225.5px;
+  margin-top: 48px;
+}
+
+.person-cards-wrapper > h3 {
+  text-align: center;
+}
+
+.person-cards {
+  display: flex;
+  margin-top: 24px;
+}
+
+.person-cards > :last-child {
+  margin-right: 0;
+}
+
+.positive-yoga {
+  font-weight: 700;
+}
+
 /* Mobile Media Queries */
 
 @media screen and (max-width: 768px) {
@@ -55,5 +77,13 @@ main {
   }
   .plans-ordered {
     text-align: left;
+  }
+  .person-cards-wrapper {
+    padding: 0 16px;
+    overflow: hidden;
+  }
+  .person-cards {
+    width: 989px;
+    overflow-x: scroll;
   }
 }
