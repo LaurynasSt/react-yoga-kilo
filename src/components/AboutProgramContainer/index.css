@@ -1,0 +1,16 @@
+.programs-container {
+  max-width: 352px;
+  width: 100%;
+}
+
+.programs-container > :nth-child(2) {
+  margin-top: 44px;
+}
+
+/* Mobile Media Queries */
+
+@media screen and (max-width: 768px) {
+  .programs-container > :nth-child(2) {
+    margin-top: 20px;
+  }
+}

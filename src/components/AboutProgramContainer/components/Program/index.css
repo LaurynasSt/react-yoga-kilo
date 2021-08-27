@@ -1,0 +1,24 @@
+.program {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.program-title {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+  line-height: 24px;
+}
+
+.program-description {
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.64;
+  line-height: 18px;
+}
+
+.program-icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 22px;
+}

@@ -1,7 +1,44 @@
-.plans-program-container {
-  padding: 0 355px;
+.plans-container {
+  max-width: 352px;
 }
 
-.plans-program-container > button {
+.plans-container > :nth-child(2) {
+  margin-top: 16px;
+}
+
+.plans-container > button {
   margin: 8px 0 16px 0;
+}
+
+.plan-terms {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 18px;
+}
+
+.plan-terms-second-p {
+  margin: 16px 0;
+}
+
+.plan-terms-link {
+  text-decoration: none;
+  color: #87cefa;
+}
+
+.plan-terms-link:hover {
+  opacity: 0.7;
+}
+
+.plan-terms-link:active {
+  opacity: 0.9;
+}
+
+/* Mobile Media Queries */
+
+@media screen and (max-width: 768px) {
+  .plans-container {
+    max-width: 768px;
+    margin-bottom: 40px;
+  }
 }

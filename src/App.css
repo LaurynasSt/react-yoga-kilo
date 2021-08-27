@@ -8,6 +8,11 @@ main {
   padding: 0 355px;
 }
 
+.plans-program-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .plans-ordered {
   font-size: 14px;
   font-weight: 400;
@@ -20,9 +25,11 @@ main {
 }
 
 .heading-title {
+  margin-bottom: 32px;
   font-size: 40px;
   font-weight: 800;
   text-align: center;
+  line-height: 56px;
 }
 
 .free-trial-orange-text {
@@ -32,6 +39,20 @@ main {
 /* Mobile Media Queries */
 
 @media screen and (max-width: 768px) {
+  main {
+    padding: 16px 0 65px;
+  }
+  .heading-title {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 36px;
+    text-align: left;
+  }
+  .heading-container,
+  .plans-program-container {
+    flex-direction: column;
+    padding: 0 16px;
+  }
   .plans-ordered {
     text-align: left;
   }
