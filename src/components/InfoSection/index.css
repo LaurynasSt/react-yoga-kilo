@@ -1,0 +1,28 @@
+.info-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 353px;
+}
+
+.journey-phones {
+  width: 343px;
+  height: 366px;
+  object-fit: contain;
+  margin-top: 20px;
+}
+
+.motivations-block {
+  margin-top: 26px;
+}
+
+/* Mobile Media Queries */
+
+@media screen and (max-width: 768px) {
+  .info-section {
+    flex-direction: column-reverse;
+    padding: 0 16px;
+  }
+  .journey-container {
+    margin-top: 40px;
+  }
+}

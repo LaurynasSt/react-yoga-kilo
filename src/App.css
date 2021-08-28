@@ -37,12 +37,19 @@ main {
 }
 
 .person-cards-wrapper {
+  display: flex;
+  flex-direction: column;
   padding: 0 225.5px;
   margin-top: 48px;
 }
 
 .person-cards-wrapper > h3 {
   text-align: center;
+}
+
+.person-cards-wrapper > button {
+  max-width: 343px;
+  margin: 48px auto;
 }
 
 .person-cards {
@@ -85,5 +92,9 @@ main {
   .person-cards {
     width: 989px;
     overflow-x: scroll;
+  }
+  .person-cards-wrapper > button {
+    max-width: 343px;
+    margin: 38px auto 40px auto;
   }
 }
