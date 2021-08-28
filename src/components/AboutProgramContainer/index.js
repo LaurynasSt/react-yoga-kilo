@@ -14,37 +14,44 @@ const programs = [
     {
         icon: PlanIcon,
         programTitle: "A personalized yoga program",
-        programDescription: "Completely safe and focused on your key goals"
+        programDescription: "Completely safe and focused on your key goals",
+        alt: "plan"
     },
     {
         icon: PersonIcon,
         programTitle: "Easy & enjoyable yoga workouts for your level",
-        programDescription: "Program adjusts to your level and pace"
+        programDescription: "Program adjusts to your level and pace",
+        alt: "person"
     },
     {
         icon: ShoeIcon,
         programTitle: "No special preparation needed",
-        programDescription: "Perfect for begginners! Requires no special preparation or equipment"
+        programDescription: "Perfect for begginners! Requires no special preparation or equipment",
+        alt: "shoe"
     },
     {
         icon: AppleIcon,
         programTitle: "Daily motivation & accountability",
-        programDescription: "Track your progress, develop a healthy routine, reach goals faster"
+        programDescription: "Track your progress, develop a healthy routine, reach goals faster",
+        alt: "apple"
     },
     {
         icon: WhistleIcon,
         programTitle: "Browse from various yoga challenges",
-        programDescription: "30 d morning yoga, mindful yoga, back flexibility challenge, and more!"
+        programDescription: "30 d morning yoga, mindful yoga, back flexibility challenge, and more!",
+        alt: "whistle"
     },
     {
         icon: SmartwatchIcon,
         programTitle: "Easy access on any device",
-        programDescription: "Do your yoga anywhere across all types of devices"
+        programDescription: "Do your yoga anywhere across all types of devices",
+        alt: "smartwatch"
     },
     {
         icon: BookcheckIcon,
         programTitle: "A complete guide to get started",
-        programDescription: "Best tips, guidelines, advice, and recommendations for successful practice"
+        programDescription: "Best tips, guidelines, advice, and recommendations for successful practice",
+        alt: "bookcheck"
     },
 ]
 
@@ -53,8 +60,8 @@ function AboutProgramContainer() {
         <section className="programs-container">
             <SectionTitle>What's in my program?</SectionTitle>
             <div className="programs">
-                {programs.map(({ icon, programTitle, programDescription }, index) => {
-                    return <Program key={index} icon={icon} programTitle={programTitle} programDescription={programDescription} />
+                {programs.map(({ icon, programTitle, programDescription, alt }, index) => {
+                    return <Program key={index} icon={icon} altText={alt} programTitle={programTitle} programDescription={programDescription} />
                 })}
             </div>
         </section>
