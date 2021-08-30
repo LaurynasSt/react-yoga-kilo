@@ -1,0 +1,31 @@
+.questions-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 352px;
+  margin: 48px 0;
+}
+
+.questions-container > :first-child {
+  text-align: center;
+}
+
+.questions-container > button {
+  margin: 0 auto;
+}
+
+.questions-wrapper {
+  margin: 12px 0 48px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .questions-container > :first-child {
+    text-align: left;
+  }
+  .questions-container {
+    padding: 0 16px;
+    margin: 40px 0;
+  }
+  .questions-wrapper {
+    margin: 12px 0 40px 0;
+  }
+}

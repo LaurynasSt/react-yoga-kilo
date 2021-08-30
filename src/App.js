@@ -9,10 +9,13 @@ import PictureKylie from "./assets/images/person_kylie.png";
 import PictureJesica from "./assets/images/person_jesica.png";
 import Button from './components/Button';
 import InfoSection from './components/InfoSection';
+import AskedQuestions from './components/QuestionsSection';
+import StickyHeader from './components/StickyHeader';
 
 function App() {
   return (
     <div className="App">
+      <StickyHeader />
       <Header />
       <main>
         <section className="heading-container">
@@ -48,9 +51,14 @@ function App() {
               I have many friends who practice yoga and I decided to try it myself. It is the best decision I have made in a long time. With <span className="positive-yoga">Positive Yoga</span> program I started to lose weight, which was demotivating me for a long time. Also, I’ve learned about yoga philosophy and poses that encourage me to practice mindfulness and pay attention to stress reduction. I am very proud of myself. Feeling better is my biggest motivation.
             </PersonCard>
           </div>
-          <Button>Get my plan</Button>
+          <Button onClick={() => alert("Coming soon... 🚀🚀🚀")}>Get my plan</Button>
         </section>
         <InfoSection />
+        <AskedQuestions />
+        <section className="plans-program-container">
+          <PlansContainer />
+          <AboutProgramContainer />
+        </section>
       </main>
     </div >
   );

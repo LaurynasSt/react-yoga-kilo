@@ -1,39 +1,19 @@
-.header-upper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 56px;
-  background-color: #90caf9;
+header {
+  padding-top: 56px;
 }
 
-.header-icon {
-  width: 20px;
-  height: 20px;
-}
-
-.header-text {
-  color: #fff;
-  font-size: 15px;
-  font-weight: 400;
-  margin-left: 18px;
-}
-
-.header-text-time {
-  color: #fff;
-  font-weight: 600;
-}
-
-.header-bottom {
+.header {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 72px;
+  filter: drop-shadow(0 8px 8px rgba(0, 0, 0, 0.04));
 }
 
 /* Mobile Media Queries */
 
 @media screen and (max-width: 768px) {
-  .header-bottom {
+  .header {
     height: 56px;
   }
 }
