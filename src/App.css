@@ -40,25 +40,40 @@ main {
   display: flex;
   flex-direction: column;
   padding: 0 225.5px;
-  margin-top: 48px;
 }
 
-.person-cards-wrapper > h3 {
+.person-cards-title > h3 {
+  margin: 48px 0 24px 0;
   text-align: center;
 }
 
-.person-cards-wrapper > button {
+.person-cards-button {
+  display: flex;
+}
+
+.person-cards-button > button {
   max-width: 343px;
   margin: 48px auto;
 }
 
 .person-cards {
   display: flex;
-  margin-top: 24px;
 }
 
 .person-cards > :last-child {
   margin-right: 0;
+}
+
+.navigation-bubbles-wrapper {
+  display: none;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.navigation-bubbles {
+  object-fit: contain;
+  width: 44px;
+  height: 7px;
 }
 
 .positive-yoga {
@@ -67,7 +82,7 @@ main {
 
 /* Mobile Media Queries */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
   main {
     padding: 16px 0 65px;
   }
@@ -87,14 +102,28 @@ main {
   }
   .person-cards-wrapper {
     padding: 0 16px;
-    overflow: hidden;
+    overflow-x: scroll;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .person-cards-wrapper::-webkit-scrollbar {
+    display: none;
   }
   .person-cards {
     width: 989px;
-    overflow-x: scroll;
+    padding-bottom: 24px;
   }
-  .person-cards-wrapper > button {
-    max-width: 343px;
-    margin: 38px auto 40px auto;
+  .person-cards-title > h3 {
+    padding: 0 16px;
+    margin: 40px 0 24px 0;
+    text-align: left;
+  }
+  .person-cards-button > button {
+    margin: 40px auto 40px auto;
+  }
+  .navigation-bubbles-wrapper {
+    display: flex;
   }
 }

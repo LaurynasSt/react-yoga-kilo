@@ -6,7 +6,7 @@ h3 {
 
 /* Mobile Media Queries */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
   h3 {
     font-size: 20px;
     font-weight: 700;

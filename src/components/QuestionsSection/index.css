@@ -17,7 +17,11 @@
   margin: 12px 0 48px 0;
 }
 
-@media screen and (max-width: 768px) {
+.questions-container > button {
+  max-width: 343px;
+}
+
+@media screen and (max-width: 375px) {
   .questions-container > :first-child {
     text-align: left;
   }

@@ -36,20 +36,9 @@
 
 /* Mobile Media Queries */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
   .plans-container {
     max-width: 768px;
     margin-bottom: 40px;
   }
-  /* .terms-wrapper {
-    max-width: 768px;
-  }
-  .plans-container {
-    max-width: 768px;
-    width: 100%;
-  }
-  .plans-container > button {
-    max-width: 768px;
-    width: 100%;
-  } */
 }

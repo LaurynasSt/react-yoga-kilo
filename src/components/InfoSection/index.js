@@ -30,7 +30,10 @@ function InfoSection() {
         <section className="info-section">
             <div className="journey-container">
                 <SectionTitle>Start your yoga journey now!</SectionTitle>
-                <img className="journey-phones" src={PhonesIcon} alt="phones" />
+                <div className="journey-wrapper">
+                    <div className="journey-mobile-bg" />
+                    <img className="journey-phones" src={PhonesIcon} alt="phones" />
+                </div>
             </div>
             <div className="motivation-container">
                 <SectionTitle>Is Positive Yoga right for me?</SectionTitle>

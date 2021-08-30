@@ -15,14 +15,34 @@
   margin-top: 26px;
 }
 
+.journey-wrapper {
+  position: relative;
+}
+
+.journey-mobile-bg {
+  position: absolute;
+  top: 96px;
+  left: -200px;
+  min-width: 800px;
+  height: 150px;
+  background-color: #ebebeb;
+  transform: rotate(-30deg);
+  z-index: -1;
+  display: none;
+}
+
 /* Mobile Media Queries */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
   .info-section {
     flex-direction: column-reverse;
     padding: 0 16px;
   }
   .journey-container {
     margin-top: 40px;
+    overflow: hidden;
+  }
+  .journey-mobile-bg {
+    display: block;
   }
 }

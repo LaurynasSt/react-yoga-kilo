@@ -9,7 +9,7 @@
 
 /* Mobile Media Queries */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
   .programs-container > :nth-child(2) {
     margin-top: 20px;
   }

@@ -11,6 +11,7 @@ import Button from './components/Button';
 import InfoSection from './components/InfoSection';
 import AskedQuestions from './components/QuestionsSection';
 import StickyHeader from './components/StickyHeader';
+import NavigationBubbles from "./assets/images/navigation_bubbles.png";
 
 function App() {
   return (
@@ -26,8 +27,10 @@ function App() {
           <PlansContainer />
           <AboutProgramContainer />
         </section>
-        <section className="person-cards-wrapper">
+        <div className="person-cards-title">
           <SectionTitle>Hear success stories from our clients</SectionTitle>
+        </div>
+        <section className="person-cards-wrapper">
           <div className="person-cards">
             <PersonCard
               nameAndAge="Emily, 28"
@@ -51,8 +54,13 @@ function App() {
               I have many friends who practice yoga and I decided to try it myself. It is the best decision I have made in a long time. With <span className="positive-yoga">Positive Yoga</span> program I started to lose weight, which was demotivating me for a long time. Also, I’ve learned about yoga philosophy and poses that encourage me to practice mindfulness and pay attention to stress reduction. I am very proud of myself. Feeling better is my biggest motivation.
             </PersonCard>
           </div>
-          <Button onClick={() => alert("Coming soon... 🚀🚀🚀")}>Get my plan</Button>
         </section>
+        <div className="navigation-bubbles-wrapper">
+          <img className="navigation-bubbles" src={NavigationBubbles} alt="navigation-bubbles" />
+        </div>
+        <div className="person-cards-button">
+          <Button onClick={() => alert("Coming soon... 🚀🚀🚀")}>Get my plan</Button>
+        </div>
         <InfoSection />
         <AskedQuestions />
         <section className="plans-program-container">
